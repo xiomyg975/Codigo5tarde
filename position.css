@@ -1,0 +1,43 @@
+*{
+    margin:0;
+    padding:0;
+}
+html,boody{
+    height:100%
+}
+section{
+    border:1px solid red;
+    height:600px;
+    /* perome va a permitir cambiar su posicion relativa a su posicion original */
+    position:relative;
+    top:100px;
+
+}
+.articulo1{
+    border:1px solid blue;
+    height:100px;
+    width:100px;
+    position:relative;
+    left:calc(50%-50px);
+    top:calc(50%-50px);
+}
+.articulo2{
+    border:1px solid blue;
+    height :100px;
+    width :100px;
+    background-color: blue;
+    position:absolute;
+    /* remueve el ekemento de la estructura :position absolute */
+    top:10px;
+    left:10px;
+}
+.articulo3{
+    border:1px solid red;
+    height :100px;
+    width:100px;
+    background-color: orange;
+    /* fixed se acomadara segun la ventana */
+    position:fixed;
+    right:10px;
+    bottom:10px;
+}
